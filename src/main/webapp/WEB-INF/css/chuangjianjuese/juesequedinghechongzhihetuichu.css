@@ -1,0 +1,30 @@
+.quedingshuxing {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 110px;
+	height: 30px;
+	margin: -15px 0 0 -185px;
+}
+
+.chongzhi {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 110px;
+	height: 30px;
+	margin: -15px 0 0 -55px;
+}
+
+.fanhuishengmocuncunkou {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 110px;
+	height: 30px;
+	margin: -15px 0 0 75px;
+}
+
+body {
+	background: url("/RPG/image/chuangjianjuese/fangdongzuo.png");
+}

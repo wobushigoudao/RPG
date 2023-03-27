@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.qudiaoyangshi {
+	text-decoration: none;
+}
+
+.zhongjiankuang {
+	color: red;
+	width: 120px;
+	height: 20px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+}
+.qugundong{
+	-ms-overflow-style: none;
+}
+
+body {
+	background: url("/RPG/image/guanliyuanmoshi/tongyong.png");
+	background-size: 100% 100%;
+	background-attachment:fixed;
+}

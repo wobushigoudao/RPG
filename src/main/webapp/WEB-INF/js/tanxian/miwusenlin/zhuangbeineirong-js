@@ -1,0 +1,64 @@
+<%@ page pageEncoding="UTF-8"%>
+<script type="text/javascript">
+window.onload = function() {
+var a=document.getElementById("a");
+var b=new Array();
+<c:forEach var="daoju" items="${daoju}">
+
+		b.push("${daoju}");
+</c:forEach >
+var cun="<table align=center width=400 height=100% cellspacing=0 cellpadding=0>";
+var p=0;
+cun=cun+"<tr><td width=80px height=0px></td><td width=80px height=0px></td><td width=80px height=0px></td><td width=80px height=0px></td><td width=80px height=0px></td></tr>";
+cun=cun+"<tr>";
+for(var o=0;o<b.length;o++){
+	cun=cun+"<td align=center height=40px>";
+	cun=cun+"<a href='javascript:void(0)' name='' style='color:blue;' onclick='fa(this)'>"+b[o]+"</a>";
+	cun=cun+"</td>";
+	p++;
+	if(p==5){
+		cun=cun+"</tr>";
+		p=0;
+		if(o!=b.length-1){
+			cun=cun+"<tr>";
+		}
+	}
+}
+
+cun=cun+"</table>";
+a.innerHTML=cun;
+var as = document.getElementsByTagName('a');
+var j;
+var l=0;
+		for(var i=0;i<as.length;i++){	
+		if(i>=0){
+			j=as[i];	
+			for(var u=0;u<i;u++){
+			if(j.innerText==as[u].innerText){
+			l++;
+			                 }
+			                     }
+			j.name=l;
+			l=0;
+			}
+		}
+}
+function fa(obj){
+	        var as = document.getElementsByTagName('a');
+			
+	if(obj.style.color=="red"){
+	obj.style.color="blue";
+	}else{
+		var j;
+		for(var i=0;i<as.length;i++){
+		if(i>=0){
+			j=as[i];
+			j.style.color="blue";
+			}
+		}
+			obj.style.color="red";
+		
+			
+	}
+}
+</script>

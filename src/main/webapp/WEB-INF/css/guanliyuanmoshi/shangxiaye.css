@@ -1,0 +1,21 @@
+.shanganniuzhongjian {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 30px;
+	margin: -15px 0 0 -80px;
+}
+
+.xiaanniuzhongjian {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 30px;
+	margin: -15px 0 0 20px;
+}
+
+body {
+	background: url("/RPG/image/guanliyuanmoshi/fangdongzuo.png");
+}

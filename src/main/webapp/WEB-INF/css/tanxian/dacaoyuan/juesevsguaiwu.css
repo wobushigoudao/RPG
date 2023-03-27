@@ -1,0 +1,15 @@
+.zhandouxinxi {
+	color: red;
+	width: 500px;
+	height: 100%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+body {
+    background: url("/RPG/image/tanxian/dacaoyuan/dacaoyuanbeijingtu.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

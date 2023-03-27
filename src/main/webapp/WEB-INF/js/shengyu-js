@@ -1,0 +1,123 @@
+<%@ page pageEncoding="UTF-8"%>
+<script type="text/javascript">
+function shengyu(a){
+var b = document.getElementById("cunhua");
+		var j=0;
+		b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a.length==0){
+               clearInterval(xun);
+         }else{
+           b.innerHTML = b.innerHTML + a[j];   
+         	j++;
+	  if (j >= a.length) {	
+		clearInterval(xun);
+		var l=document.getElementById("que");
+				var pp=document.getElementById("cun");
+		l.type="button";
+		pp.value=parseInt(pp.value)+1
+		
+		
+		}}
+	},50)
+
+
+
+}
+function ju(a){
+var b = document.getElementById("cunhua");
+		var j=0;
+		b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a.length==0){
+               clearInterval(xun);
+         }else{
+           b.innerHTML = b.innerHTML + a[j];   
+         	j++;
+	  if (j >= a.length) {	
+		clearInterval(xun);
+		var l=document.getElementById("dan");
+				
+		l.type="button";
+	
+		
+		
+		
+		}}
+	},50)
+
+
+
+}
+function dan(){
+top.zhongxia.location.href = "/RPG/tanxian/miwusenlin/tishi";
+
+}
+function queding(){
+var pp=document.getElementById("cun");
+var l=document.getElementById("que");
+var b = document.getElementById("cunhua");
+l.type="hidden";
+var oo = new Array();
+<c:forEach var="sh" items="${sh}">
+
+oo.push("${sh}");
+</c:forEach >
+var a=oo[pp.value];
+var j=0;
+		b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a==null){
+               clearInterval(xun);
+               top.zhongxia.location.href="/RPG/tanxian/miwusenlin/tishi";
+         }else{
+           b.innerHTML = b.innerHTML + a[j];   
+         	j++;
+	  if (j >= a.length) {	
+		clearInterval(xun);
+		l.type="button";
+	pp.value=parseInt(pp.value)+1
+		
+		
+		}}
+	},50)
+
+}
+function fahua(a,p,l){
+var b = document.getElementById("cunhua");
+		var j=0;
+			 b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a.length==0){
+               clearInterval(xun);
+         }else{
+           b.innerHTML = b.innerHTML + a[j];
+         	j++;
+	if (j >= a.length) {	
+		clearInterval(xun);
+		if(p=="黑商"){
+		var h=document.getElementById("bugao");
+		var cc=document.getElementById("zhunda");
+		h.type="button";
+		cc.type="button";
+		cc.name=p;
+        }
+     
+        
+		}
+		}
+	},50)
+
+
+
+}
+
+function bugao(){
+top.zhongxia.location.href="/RPG/tanxian/miwusenlin/tishi";
+}
+function zhunda(){
+var cc=document.getElementById("zhunda");
+var k=cc.name;
+top.zhongxia.location.href="/RPG/ren/zhunda?kk="+encodeURI(encodeURI(k));;
+}
+</script>

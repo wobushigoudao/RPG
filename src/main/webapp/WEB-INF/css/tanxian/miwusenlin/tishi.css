@@ -1,0 +1,17 @@
+.tishi {
+	color: red;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 350px;
+	height: 20px;
+	font-size: 20px;
+	margin: -10px 0 0 -175px;
+	text-align: center;
+}
+
+body {
+	background: url("/RPG/image/tanxian/fangdongzuo.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

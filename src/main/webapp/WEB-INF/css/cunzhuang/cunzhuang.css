@@ -1,0 +1,135 @@
+.cunzhang{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -225px 0 0 -50px;
+}
+.diaoxiang{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -65px 0 0 -90px;
+}
+.tanxian{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: 165px 0 0 -120px;
+
+}
+.qucunkou{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: 165px 0 0 20px;
+
+}
+.dd{
+	float:right;
+}
+.yuanyi{
+
+	width: 100px;
+	height: 30px;
+	margin: 10px 0 0 0;
+
+}
+.buyuan{
+	
+	width: 100px;
+	height: 30px;
+	margin: 40px 0 0 20px;
+}
+.linke{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -125px 0 0 -220px;
+}
+.lvguang{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -25px 0 0 -100px;
+}
+.zhuangbei{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -65px 0 0 -300px;
+}
+.maoxianzhe{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: 65px 0 0 100px;
+}
+.lihai{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: 65px 0 0 -100px;
+}
+.daoju{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -45px 0 0 50px;
+}
+.liner{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -25px 0 0 -220px;
+}
+.xiaosi{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -125px 0 0 -20px;
+}
+.qigai{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: 125px 0 0 -260px;
+}
+.xiaode{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -125px 0 0 100px;
+}
+body {
+	background: url("/RPG/image/cunzhuang/cunzhuangbeijingtu.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

@@ -1,0 +1,99 @@
+body {
+	background: url("/RPG/image/shengmocuncunkou/shengmodalubeijingtu.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.tanxiandalu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 100px;
+	margin: -60px 0 0 -120px;
+}
+
+.cunzhuang {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 100px;
+	margin: -60px 0 0 20px;
+}
+
+.chuangjianjuese {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 100px;
+	margin: 20px 0 0 -120px;
+}
+
+.guangliyuan {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	width: 100px;
+	margin: 20px 0 0 20px;
+}
+
+.meiyouguaiwu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 280px;
+	height: 20px;
+	margin: -120px 0 0 -140px;
+	color: red;
+	text-align: center;
+	font-size: 20px;
+}
+
+.meiyoujuese {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 120px;
+	height: 20px;
+	margin: -120px 0 0 -60px;
+	color: red;
+	text-align: center;
+	font-size: 20px;
+}
+
+.jueseyichuangjian {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 140px;
+	height: 20px;
+	margin: -120px 0 0 -70px;
+	color: red;
+	text-align: center;
+	font-size: 20px;
+}
+.chuangjianljuese{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 140px;
+	height: 20px;
+	margin: -120px 0 0 -70px;
+	color: red;
+	text-align: center;
+	font-size: 20px;
+}
+.meida{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 180px;
+	height: 20px;
+	margin: -120px 0 0 -90px;
+	color: red;
+	text-align: center;
+	font-size: 20px;
+}

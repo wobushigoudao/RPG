@@ -1,0 +1,88 @@
+<span id="dabai" class="dabai"> <%
+String dabai = (String) request.getAttribute("dabai");
+ if (dabai != null) {
+	 request.setAttribute("dabai", dabai);
+
+ %> <script type="text/javascript">
+ var a="${dabai}";
+var r = document.getElementById("dabai");
+var j=0;
+ var xun = window.setInterval(function() {
+ if(a.length==0){
+	 clearInterval(xun);
+ }else{
+		r.innerHTML = r.innerHTML + a[j];
+		j++;
+
+		if (j >= a.length) {	
+			clearInterval(xun)
+ }
+ }
+ },50);
+ 
+ </script>
+  <%
+ }
+ %>
+ 
+	</span>
+	
+		<span id="taopaocheng" class="taopaocheng"> <%
+String taopaocheng = (String) request.getAttribute("taopaocheng");
+ if (taopaocheng != null) {
+	 request.setAttribute("taopaocheng", taopaocheng);
+
+ %> <script type="text/javascript">
+ var a="${taopaocheng}";
+var r = document.getElementById("taopaocheng");
+var j=0;
+ var xun = window.setInterval(function() {
+ if(a.length==0){
+	 clearInterval(xun);
+ }else{
+		r.innerHTML = r.innerHTML + a[j];
+		j++;
+
+		if (j >= a.length) {	
+			clearInterval(xun)
+ }
+ }
+ },50);
+ 
+ </script>
+  <%
+ }
+ %>
+ 
+	</span>
+	 
+		<span id="jieguo" class="jieguo"> <%
+String jieguo = (String) request.getAttribute("jieguo");
+ if (jieguo != null) {
+	 request.setAttribute("jieguo", jieguo);
+
+ %> <script type="text/javascript">
+ var a="${jieguo}";
+var r = document.getElementById("jieguo");
+var j=0;
+ var xun = window.setInterval(function() {
+ if(a.length==0){
+	 clearInterval(xun);
+ }else{
+
+		r.innerHTML = r.innerHTML + a[j];
+		j++;
+
+		if (j >= a.length) {	
+			clearInterval(xun)
+ }
+ }
+ },50);
+ 
+ </script>
+  <%
+ }
+ %>
+ 
+	</span>
+	

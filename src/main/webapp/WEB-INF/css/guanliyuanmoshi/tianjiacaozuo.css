@@ -1,0 +1,29 @@
+.tianjia {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -15px 0 0 -170px;
+}
+
+.fanhuiguaiwubiao {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -15px 0 0 70px;
+}
+.yanzheng {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -15px 0 0 -50px;
+}
+
+body {
+	background: url("/RPG/image/guanliyuanmoshi/fangdongzuo.png");
+}

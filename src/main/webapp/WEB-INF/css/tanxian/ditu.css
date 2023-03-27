@@ -1,0 +1,32 @@
+.miwusenlin {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -65px 0 0 -50px;
+}
+
+.dacaoyuan {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -15px 0 0 -50px;
+}
+
+.mowangchengbao {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: 35px 0 0 -50px;
+}
+
+body {
+	background: url("/RPG/image/tanxian/ditubeijingtu.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

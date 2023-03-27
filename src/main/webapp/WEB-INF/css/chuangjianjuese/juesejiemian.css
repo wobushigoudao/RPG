@@ -1,0 +1,16 @@
+.zitidaxiao {
+	font-size: 20px;
+}
+
+input {
+	width: 100px;
+	height: 20px;
+}
+.qugundong{
+	-ms-overflow-style: none;
+}
+body {
+	background: url("/RPG/image/chuangjianjuese/tongyong.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shujukujiekoubao.shujukujiekou">
+	<select id="chaxuehao"
+		resultMap="dengluhezhucehetanxianhecunzhuanghechuangjianjuese">
+		select * from biao where
+		XueHao=#{xueHao}
+	</select>
+
+	<insert id="zhuce" parameterType="com.wdbao.juesexinxi">
+		insert into biao(
+		XueHao,MiMa,ShiFou
+		)values(
+		#{xueHao},#{miMa},#{shiFou}
+		)
+	</insert>
+	<update id="xiugai" parameterType="com.wdbao.juesexinxi">
+		update biao
+		set
+		XingMing=#{xingMing},DengJi=#{dengJi},XueLiang=#{xueLiang},GongJi=#{gongJi},FangYu=#{fangYu},
+		SuDu=#{suDu},JinQian=#{jinQian},JingYan=#{jingYan},ShiFou=#{shiFou},XueLiangMax=#{xueliangMax},JingYanMax=#{jingyanMax}
+		where
+		XueHao=#{xueHao}
+	</update>
+	<update id="xiugaishuxing" parameterType="com.wdbao.juesexinxi">
+		update biao
+		set
+		DengJi=#{dengJi},XueLiang=#{xueLiang},GongJi=#{gongJi},FangYu=#{fangYu},
+		SuDu=#{suDu},JinQian=#{jinQian},JingYan=#{jingYan},XueLiangMax=#{xueliangMax},JingYanMax=#{jingyanMax}
+		where
+		XueHao=#{xueHao}
+	</update>
+
+
+	<resultMap type="com.wdbao.juesexinxi"
+		id="dengluhezhucehetanxianhecunzhuanghechuangjianjuese">
+		<result column="XueHao" property="xueHao"></result>
+		<result column="MiMa" property="miMa"></result>
+		<result column="ShiFou" property="shiFou"></result>
+
+		<result column="DengJi" property="dengJi"></result>
+		<result column="XueLiang" property="xueLiang"></result>
+		<result column="GongJi" property="gongJi"></result>
+		<result column="FangYu" property="fangYu"></result>
+		<result column="SuDu" property="suDu"></result>
+		<result column="JinQian" property="jinQian"></result>
+		<result column="JingYan" property="jingYan"></result>
+		<result column="XueLiangMax" property="xueliangMax"></result>
+		<result column="JingYanMax" property="jingyanMax"></result>
+
+	</resultMap>
+	<select id="chasuoyouguaiwu" resultMap="guanliyuan">
+
+		select * from
+		guaiwubiao
+
+
+	</select>
+	<select id="chaguaiwubiao" resultMap="guanliyuan">
+
+		select * from
+		guaiwubiao
+		limit #{a},5
+
+
+	</select>
+
+	<select id="chaguaiwuid" resultMap="guanliyuan">
+		select * from
+		guaiwubiao where
+		ID=#{iD}
+
+	</select>
+
+	<insert id="tianjiaguaiwu" parameterType="com.wdbao.guaiwushuxing">
+		insert into guaiwubiao
+		(ID,XingMing,XueLiang,GongJi,FangYu,SuDu,JinQian,JingYan
+		)values(
+		#{iD},#{xingMing},#{xueLiang},#{gongJi},#{fangYu},#{suDu},#{jinQian},#{jingYan}
+		)
+	</insert>
+
+	<update id="xiugaiguaiwu" parameterType="com.wdbao.guaiwushuxing">
+		update guaiwubiao
+		set
+		XingMing=#{xingMing},XueLiang=#{xueLiang},GongJi=#{gongJi},FangYu=#{fangYu},
+		SuDu=#{suDu},JinQian=#{jinQian},JingYan=#{jingYan}
+		where
+		ID=#{iD}
+	</update>
+
+	<delete id="shanchuguaiwu">
+		delete from guaiwubiao
+		where ID=#{iD}
+	</delete>
+
+	<resultMap type="com.wdbao.guaiwushuxing" id="guanliyuan">
+		<result column="ID" property="iD"></result>
+		<result column="XingMing" property="xingMing"></result>
+		<result column="XueLiang" property="xueLiang"></result>
+		<result column="GongJi" property="gongJi"></result>
+		<result column="FangYu" property="fangYu"></result>
+		<result column="SuDu" property="suDu"></result>
+		<result column="JinQian" property="jinQian"></result>
+		<result column="JingYan" property="jingYan"></result>
+	</resultMap>
+
+	<insert id="tianjiamax" parameterType="com.wdbao.shuxingmax">
+		insert into shuxingzuida(
+		XueHao,XueLiangMax,GongJiMax,FangYuMax,SuDuMax
+		)values(
+		#{xueHao},#{xueliangMax},#{gongjiMax},#{fangyuMax},#{suduMax}
+		)
+	</insert>
+	<select id="chamaxxuehao" resultMap="max">
+		select * from
+		shuxingzuida
+		where
+		XueHao=#{xueHao}
+
+	</select>
+	<resultMap type="com.wdbao.shuxingmax" id="max">
+		<result column="XueHao" property="xueHao"></result>
+		<result column="XueLiangMax" property="xueliangMax"></result>
+		<result column="GongJiMax" property="gongjiMax"></result>
+		<result column="FangYuMax" property="fangyuMax"></result>
+		<result column="SuDuMax" property="suduMax"></result>
+
+	</resultMap>
+	<select id="chadaozhuang" resultMap="daozhuang">
+		select * from daozhuang
+		where
+		XueHao=#{xueHao}
+	</select>
+	<insert id="tianjiadaozhuang"
+		parameterType="com.wdbao.daojuhezhuangbei">
+		insert into daozhuang(
+		XueHao,MiWuSenLin,DaCaoYuan,MoWangChengBao
+		)values(
+		#{xueHao},#{miwusenLin},#{dacaoyuan},#{mowangchengbao}
+		)
+	</insert>
+	<update id="xiugaidaozhuang"
+		parameterType="com.wdbao.daojuhezhuangbei">
+		update daozhuang
+		set
+		DaoJu=#{daoJ},ZhuangBei=#{zhuangB},MiWuSenLin=#{miwusenLin},DaCaoYuan=#{dacaoyuan},MoWangChengBao=#{mowangchengbao},WuQi=#{wuQi},
+		FangJu=#{fangJu}
+		where
+		XueHao=#{xueHao}
+	</update>
+	<resultMap type="com.wdbao.daojuhezhuangbei" id="daozhuang">
+		<result column="XueHao" property="xueHao"></result>
+		<result column="DaoJu" property="daoJ"></result>
+		<result column="ZhuangBei" property="zhuangB"></result>
+		<result column="MiWuSenLin" property="miwusenLin"></result>
+		<result column="DaCaoYuan" property="dacaoyuan"></result>
+		<result column="MoWangChengBao" property="mowangchengbao"></result>
+		<result column="WuQi" property="wuQi"></result>
+		<result column="FangJu" property="fangJu"></result>
+
+	</resultMap>
+	<select id="chalu" resultMap="luren">
+		select * from luren
+		where
+		XueHao=#{xueHao}
+	</select>
+	<insert id="tianjialu"
+		parameterType="com.wdbao.teshulei">
+		insert into luren(
+		XueHao
+		)values(
+		#{xueHao}
+		)
+	</insert>
+	<update id="xiugailu"
+		parameterType="com.wdbao.teshulei">
+		update luren
+		set
+		MiWuSenLin=#{miwusenlinluren},DaCaoYuan=#{dacaoyuan},MoWangChengBao=#{mowangchengbao}
+		where
+		XueHao=#{xueHao}
+	</update>
+	<resultMap type="com.wdbao.teshulei" id="luren">
+		<result column="XueHao" property="xueHao"></result>	
+		<result column="MiWuSenLin" property="miwusenlinluren"></result>
+     	<result column="DaCaoYuan" property="dacaoyuan"></result>
+		<result column="MoWangChengBao" property="mowangchengbao"></result>
+
+	</resultMap>
+	
+	<select id="chacao" resultMap="caozuo">
+		select * from caozuo
+		where
+		XueHao=#{xueHao}
+	</select>
+	<insert id="jiacao"
+		parameterType="com.wdbao.wuyong">
+		insert into caozuo(
+		XueHao,LiWan,FangTeJi
+		)values(
+		#{xueHao},#{liWan},#{fangteJi}
+		)
+	</insert>
+	<update id="xiucao"
+		parameterType="com.wdbao.wuyong">
+		update caozuo
+		set
+		LiWan=#{liWan},FangTeJi=#{fangteJi}
+		where
+		XueHao=#{xueHao}
+	</update>
+		<resultMap type="com.wdbao.wuyong" id="caozuo">
+		<result column="XueHao" property="xueHao"></result>	
+		<result column="LiWan" property="liWan"></result>
+     	<result column="FangTeJi" property="fangteJi"></result>
+	</resultMap>
+	
+	<select id="chatu" resultMap="tu">
+		select * from cuntu
+		where
+		XueHao=#{xueHao}
+	</select>
+    <insert id="jiatu"
+		parameterType="com.wdbao.tupian">
+		insert into cuntu(
+		XueHao
+		)values(
+		#{xueHao}
+		)
+	</insert>
+	<update id="xiutu"
+		parameterType="com.wdbao.tupian">
+		update cuntu
+		set
+		TuYi=#{tuYi},TuEr=#{tuEr}
+		where
+		XueHao=#{xueHao}
+	</update>
+	<update id="xiutu1"
+			parameterType="com.wdbao.tupian">
+		update cuntu
+		set
+			TuYi=#{tuYi}
+		where
+			XueHao=#{xueHao}
+	</update>
+	<resultMap type="com.wdbao.tupian" id="tu">
+		<result column="XueHao" property="xueHao"></result>	
+		<result column="TuYi" property="tuYi"></result>	
+		<result column="TuEr" property="tuEr"></result>
+	</resultMap>
+	
+	
+</mapper>

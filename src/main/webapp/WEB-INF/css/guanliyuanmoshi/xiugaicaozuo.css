@@ -1,0 +1,21 @@
+.xiugai {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -15px 0 0 -120px;
+}
+
+.fanhuiguaiwubiao {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 30px;
+	margin: -15px 0 0 20px;
+}
+
+body {
+	background: url("/RPG/image/guanliyuanmoshi/fangdongzuo.png");
+}

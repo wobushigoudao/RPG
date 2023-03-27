@@ -1,0 +1,58 @@
+.yizhucexuehao {
+	color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 140px;
+	height: 20px;
+	margin: -63px 0 0 70px;
+	font-size: 22px;
+}
+.qugundong{
+	-ms-overflow-style: none;
+}
+body {
+	background: url("/RPG/image/dengluhezhuce/zhucebeijingtu.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+body table {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -225px;
+}
+
+.zitidaxiao {
+	font-size: 30px;
+}
+
+.xuehao {
+	position: relative;
+	left: -70px;
+}
+
+.mima {
+	position: relative;
+	left: -70px;
+}
+
+.input {
+	position: relative;
+	left: -70px;
+	top: -5px;
+	height: 30px;
+}
+
+.zhuce {
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+}
+
+.fanhuitanxianwang {
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+}

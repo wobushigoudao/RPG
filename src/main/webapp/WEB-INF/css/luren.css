@@ -1,0 +1,71 @@
+body {
+	background: url("/RPG/image/tanxian/fangdongzuo.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.yuanyi{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:-15px 0 0 -120px;
+}
+.bugao{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:-15px 0 0 -50px;
+}
+.qu{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:-15px 0 0 -50px;
+}
+.zhan{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:-15px 0 0 -50px;
+}
+.dan{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:-15px 0 0 -50px;
+}
+.zhunda{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:35px 0 0 -50px;
+}
+.buyuanyi{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100px;
+	height:30px;
+	margin:-15px 0 0 20px;
+}
+.cunhua{
+	color: red;
+	width: 400px;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+	left: 50%;
+	margin: 0 0 0 -200px;
+}

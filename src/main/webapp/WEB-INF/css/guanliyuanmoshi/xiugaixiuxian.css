@@ -1,0 +1,12 @@
+.xiuxianzhongjian {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 130px;
+	height: 20px;
+	margin: -10px 0 0 -70px;
+}
+
+body {
+	background: url("/RPG/image/guanliyuanmoshi/fangdongzuo.png");
+}

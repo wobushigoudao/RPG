@@ -1,0 +1,183 @@
+<%@ page pageEncoding="UTF-8"%>
+<script type="text/javascript">
+function fahua(a,p,l){
+var b = document.getElementById("cunhua");
+		var j=0;
+			 b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a.length==0){
+               clearInterval(xun);
+         }else{
+           b.innerHTML = b.innerHTML + a[j];
+         	j++;
+	if (j >= a.length) {	
+		clearInterval(xun);
+		if(p=="闯荡者"){
+		var c=document.getElementById("yuanyi");
+		var d=document.getElementById("buyuanyi");
+		if(l==0){
+		c.value="愿意";	
+		c.type="button";
+		c.name=p;
+		d.value="不愿意";
+		d.type="button";
+		d.name=p;
+		}else{
+		var h=document.getElementById("bugao");
+		var cc=document.getElementById("zhunda");
+		h.type="button";
+		cc.type="button";
+		cc.name=p;
+        }
+        }
+        if(p=="蜥蜴王"){
+        var cc=document.getElementById("zhan");
+        cc.type="button";
+        cc.name=p;
+        }
+        if(p=="象精"){
+         var cc=document.getElementById("zhan");
+        cc.type="button";
+        cc.name=p;
+        }
+        if(p=="魔王"){
+        var cc=document.getElementById("zhan");
+        cc.type="button";
+        cc.name=p;
+        }
+        if(p=="黑商"){
+        if(l==0){
+        var c=document.getElementById("yuanyi");
+		var d=document.getElementById("buyuanyi");
+        c.value="购买";	
+		c.type="button";
+		c.name=p;
+		d.value="不购买";
+		d.type="button";
+		d.name=p;
+    }    
+        
+        }
+		}
+		}
+	},50)
+
+
+
+}
+
+
+function ju(a){
+var b = document.getElementById("cunhua");
+		var j=0;
+		b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a.length==0){
+               clearInterval(xun);
+         }else{
+           b.innerHTML = b.innerHTML + a[j];   
+         	j++;
+	  if (j >= a.length) {	
+		clearInterval(xun);
+		var l=document.getElementById("dan");
+				
+		l.type="button";
+	
+		
+		
+		
+		}}
+	},50)
+
+
+
+}
+
+function bugao(){
+top.zhongxia.location.href="/RPG/tanxian/miwusenlin/tishi";
+}
+function zhunda(){
+var cc=document.getElementById("zhunda");
+var k=cc.name;
+top.zhongxia.location.href="/RPG/ren/zhunda?kk="+encodeURI(encodeURI(k));;
+}
+function dan(){
+ top.zhongxia.location.href="/RPG/tanxian/miwusenlin/tishi";
+
+}
+function zhan(){
+var cc=document.getElementById("zhan");
+var k=cc.name;
+top.zhongxia.location.href="/RPG/ren/zhunda?kk="+encodeURI(encodeURI(k));;
+}
+function yuanyi(){
+var xue=document.getElementById("xue").value;
+var dalu=document.getElementById("dalu").value;
+var name=document.getElementById("yuanyi").name;
+top.zhongxia.location.href = "/RPG/ren/yuanyi?cunxuehao="+xue+"&name="+encodeURI(encodeURI(name))+"&dalu="+encodeURI(encodeURI(dalu));
+
+}
+function buyuanyi(){
+var xue=document.getElementById("xue").value;
+var dalu=document.getElementById("dalu").value;
+var name=document.getElementById("buyuanyi").name;
+top.zhongxia.location.href = "/RPG/ren/buyuanyi?cunxuehao="+xue+"&name="+encodeURI(encodeURI(name))+"&dalu="+encodeURI(encodeURI(dalu));
+}
+
+function shengyu(a){
+var b = document.getElementById("cunhua");
+		var j=0;
+		b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a.length==0){
+               clearInterval(xun);
+         }else{
+           b.innerHTML = b.innerHTML + a[j];   
+         	j++;
+	  if (j >= a.length) {	
+		clearInterval(xun);
+		var l=document.getElementById("que");
+				var pp=document.getElementById("cun");
+		l.type="button";
+		pp.value=parseInt(pp.value)+1
+		
+		
+		}}
+	},50)
+
+
+
+}
+
+function queding(){
+var pp=document.getElementById("cun");
+var l=document.getElementById("que");
+var b = document.getElementById("cunhua");
+l.type="hidden";
+var oo = new Array();
+<c:forEach var="sh" items="${sh}">
+
+oo.push("${sh}");
+</c:forEach >
+var a=oo[pp.value];
+var j=0;
+		b.innerHTML="";
+		 var xun = window.setInterval(function() {
+		if(a==null){
+               clearInterval(xun);
+               top.zhongxia.location.href="/RPG/tanxian/miwusenlin/tishi";
+         }else{
+           b.innerHTML = b.innerHTML + a[j];   
+         	j++;
+	  if (j >= a.length) {	
+		clearInterval(xun);
+		l.type="button";
+	pp.value=parseInt(pp.value)+1
+		
+		
+		}}
+	},50)
+
+}
+
+</script>

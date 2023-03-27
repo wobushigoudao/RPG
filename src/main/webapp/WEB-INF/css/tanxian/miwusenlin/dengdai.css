@@ -1,0 +1,16 @@
+.den {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	margin: -75px 0 0 -750px;
+	text-align: center;
+	color: red;
+}
+
+body {
+	background: url("/RPG/image/tanxian/miwusenlin/fangdongzuo.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

@@ -1,0 +1,38 @@
+<script type="text/javascript">
+window.onload = function() {
+
+var inp = parent.frames["zhongshang"].document.getElementsByTagName('input');
+	for(var i=0;i<inp.length;i++){
+		inp[i].removeAttribute("disabled");
+	}
+	var a = new Array();
+	<c:forEach var="tishi" items="${tishi}">
+
+		a.push("${tishi}");
+	</c:forEach >
+	var b = document.getElementById("cuntishi");
+	window.setInterval(function() {
+		while (true) {
+			var suijishu = parseInt(Math.random() * 5);
+			if (a[suijishu] == b.innerText) {
+			} else {
+			var k=a[suijishu];
+			var j=0;
+			b.innerHTML="";
+			 var xun = window.setInterval(function() {
+			if(k.length==0){
+	               clearInterval(xun);
+             }else{
+               b.innerHTML = b.innerHTML + k[j];
+	         	j++;
+		if (j >= k.length) {	
+			clearInterval(xun);
+            }
+			}
+		},50)
+		break;
+    }
+   }
+	}, 5000);
+}
+</script>

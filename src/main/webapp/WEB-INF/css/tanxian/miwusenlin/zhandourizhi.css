@@ -1,0 +1,30 @@
+.zhandouxinxi {
+	color: red;
+	width: 500px;
+	height: 100%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+}
+.zhongjian{
+	position:relative;
+	color:red;
+	left:246px;
+	top:0px;
+	width:100px;
+	height:30px;
+	text-align:center;
+	font-size:20px;
+}
+a{
+		text-decoration: none;
+}
+.qugundong{
+	-ms-overflow-style: none;
+}
+body {
+	background: url("/RPG/image/tanxian/miwusenlin/miwusenlinbeijingtu.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}

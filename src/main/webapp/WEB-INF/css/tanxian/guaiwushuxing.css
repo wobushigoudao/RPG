@@ -1,0 +1,13 @@
+.guaiwushuxing {
+	position: absolute;
+	left: 50%;
+	width: 120px;
+	height: 20px;
+	margin: 0 0 0 -50px;
+}
+
+body {
+	background: url("/RPG/image/tanxian/tongyong.png");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
